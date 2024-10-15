@@ -1,3 +1,36 @@
+## Начало работы с проектом
+### Клонирование
+```bash
+git clone https://github.com/voidCaloneian/flexites_test_task.git
+cd flexites_test_task
+```
+### Создание виртуального окружения
+python3 -m venv venv
+
+### Активация виртуального окружения (для разных систем команды разные):
+-  Для macOS/Linux:
+```
+source venv/bin/activate
+```
+- Для Windows:
+```venv\Scripts\activate```
+
+### Установка зависимостей из requirements.txt
+```pip install -r requirements.txt```
+
+### Миграции
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### Генерация объектов моделей для ручного тестирования (curl, Postman)
+```python manage.py create_random_data```
+
+### Запуск автоматических тестов
+```python manage.py test --parallel -v 2```
+
+
 Базовый URL: http://localhost:8000/api/
 Аутентификация: JSON Web Tokens (JWT)
 Формат данных: JSON
