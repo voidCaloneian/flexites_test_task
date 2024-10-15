@@ -44,6 +44,12 @@ python manage.py create_random_data
 ```
 python manage.py test --parallel -v 2
 ```
+
+### Запуск сервера
+```
+python manage.py runserver
+```
+
 ## API
 
 Базовый URL: http://localhost:8000/api/
