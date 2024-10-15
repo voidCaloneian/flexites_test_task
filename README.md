@@ -67,7 +67,7 @@ URL: /api/users/
     "first_name": "Петр",
     "last_name": "Петров",
     "phone": "+79876543210",
-    "avatar": "<file>",
+    "avatar": "<file (multipart/form-data)>",
     "organization_ids": [1, 2]
 }
 ```
